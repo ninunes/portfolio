@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }  
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(236, 236, 245);
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(96, 197, 231);
+}
+
+nav ul li.btn a{
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #60c5e7;
+    border-radius: 30px;
+    padding: 9px 28px;
+}
+
+nav ul li.btn a:hover{
+    color: rgb(96, 197, 231);
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+.detel h1{
+    font-size: 60px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgb(96, 197, 231); 
+}
+
+.detel p{
+    color: #555555;
+    line-height: 22px;
+}
+
+.detel a{
+    color: #555555;
+    line-height: 22px;
+}
+
+.cv a{
+    background: #212121;
+    padding: 15px 23px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin-left: 7.5%;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.cv a:hover{
+    background: rgb(96, 197, 231);
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .girl{
+    left: 45%;
+}
+
+.social{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social a{
+    font-size: 30px;
+    color: #212121;
+    margin-right: 20px;
+}
+
+.social a:hover{
+    color: rgb(96, 197, 231);
+}
+
+@media screen and (max-width: 930px) {
+    nav.hero{
+        width: 100%
+    }
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 5rem;
+    padding-top: 0px;
+    padding-left: -380px;
+    padding-bottom: -30px;
+    padding-right: 0px;
+}
+.box{
+    width:830px;
+	height:450px;
+	margin:0px;
+	padding:10px;
+    position: relative; top: 30px; left: 600px;
+    background: rgb(158, 195, 215, 0.3);
+    border-radius: 25px;
+    animation-name: anime;
+    animation-duration: 1s;
+}
+
+@keyframes anime {
+    0% {
+        position: relative; left: 600px; top:600px;
+    }
+    100% {
+        position: relative; left: 600px; top: 30px;
+    }
+  }
+
+.about-image {
+    position:relative; top: 40px; left: -800px; 
+    animation-name: anime1;
+    animation-duration: 1s;
+}
+
+@keyframes anime1 {
+    0% {
+        position: relative; left: -800px; top:600px;
+    }
+    100% {
+        position: relative; left: -800px; top: 40px;
+    }
+  }
+
+.about-text h1 {
+    font-weight: bold;
+    font-size: 70px;
+    color: rgb(96, 197, 231);
+    position:relative; top: -610px; left: 850px;
+    animation-name: anime2;
+    animation-duration: 1s;
+}
+
+@keyframes anime2 {
+    0% {
+        position: relative; left: 850px; top:-40px;
+    }
+    100% {
+        position: relative; left: 850px; top: -610px;
+    }
+  }
+
+.about p {
+    text-align:justify;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: 18px;
+    position:relative; left: 630px; top: -580px; 
+    animation-name: animation;
+    animation-duration: 1s;
+  }
+@keyframes animation {
+    0% {
+        position: relative; left: 630px; top:0px;
+    }
+    100% {
+        position: relative; left: 630px; top: -580px;
+    }
+  }
